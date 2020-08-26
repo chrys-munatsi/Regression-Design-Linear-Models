@@ -103,3 +103,15 @@ mD <- lm(prop.black ~ age + sex + age*sex, data = lions)
 mE <- lm(prop.black ~ age + sex + park + age*sex, data = lions)
 
 
+# Question 10: What is the Akaike weight of the best model?
+aics <- AIC(mA, mB, mC, mD, mE)
+delta.aics <- aics$AIC - min(aics$AIC)
+cbind(model=c("mA", "mB", "mC", "mD","mE"), delta.aics)
+
+# Question 11: Does the result in Question 10 above depend on which other models
+# are in the set?
+  
+
+# Question 12: What is wrong with using linear regression to model proportion of 
+# nose blackness?
+
