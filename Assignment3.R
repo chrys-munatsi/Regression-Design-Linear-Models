@@ -66,6 +66,9 @@ summary(modelA)
 # e) 
 # Plot proportion black against age, using different colours for the different sexes.
 # You can add a legend to make clearer which colour refers to which sex:
-legend("topleft", col = 1:2, legend = levels(sex), pch = "-")
-plot(prop.black, age)
+plot(lions[lions$sex=="female",]$prop.black, lions[lions$sex=="female",]$age, col="blue", pch=16, xlab = "Age", ylab = "prop.black", xlim=c(0,1.2), ylim=c(0,16))
+par(new=TRUE)
+plot(lions[lions$sex=="male",]$prop.black, lions[lions$sex=="male",]$age, col="red", pch=16, xlab = "Age", ylab = "prop.black", xlim=c(0,1.2), ylim=c(0,16))
+legend("topleft", legend=c('Female', 'Male'), col=c('blue', 'red'), pch=c(16,16))
+
 
