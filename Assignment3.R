@@ -72,3 +72,13 @@ plot(lions[lions$sex=="male",]$prop.black, lions[lions$sex=="male",]$age, col="r
 legend("topleft", legend=c('Female', 'Male'), col=c('blue', 'red'), pch=c(16,16))
 
 
+# f)
+# f) Fit the following 3 models, each time with proportion black as the response 
+# variable and the following explanatory variables:
+# model B: age as the only explanatory variable.
+# model C: age and sex as explanatory variables
+# model D: age, sex and interaction between age and sex as explanatory variables
+
+modelB <- lm(prop.black ~ age, data = lions)
+modelC <- lm(prop.black ~ age + sex, data = lions)
+modelD <- lm(prop.black ~ age + sex + age*sex, data = lions)
