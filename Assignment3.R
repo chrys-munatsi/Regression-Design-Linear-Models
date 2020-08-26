@@ -82,3 +82,24 @@ legend("topleft", legend=c('Female', 'Male'), col=c('blue', 'red'), pch=c(16,16)
 modelB <- lm(prop.black ~ age, data = lions)
 modelC <- lm(prop.black ~ age + sex, data = lions)
 modelD <- lm(prop.black ~ age + sex + age*sex, data = lions)
+
+# Question 7: What does an interaction between sex and age imply?
+
+
+# Question 8: Interpret the regression coefficient estimates in model D.
+
+
+# Question 9: What is the value of the maximised log likelihood for Model D (with
+# the interaction term)? How many parameters were estimated for this model?
+
+
+# h) Consider a model set consisting of the following four models (three of which 
+# you have already fitted), each time with proportion black as the response variable:
+
+mA <- lm(prop.black ~ sex, data=lions)
+mB <- lm(prop.black ~ age, data=lions) 
+mC <- lm(prop.black ~ age + sex, data = lions)
+mD <- lm(prop.black ~ age + sex + age*sex, data = lions)
+mE <- lm(prop.black ~ age + sex + park + age*sex, data = lions)
+
+
