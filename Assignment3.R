@@ -108,6 +108,8 @@ mE <- lm(prop.black ~ age + sex + park + age*sex, data = lions)
 aics <- AIC(mA, mB, mC, mD, mE)
 delta.aics <- aics$AIC - min(aics$AIC)
 cbind(model=c("mA", "mB", "mC", "mD","mE"), delta.aics)
+wi <- exp(-0.5*delta.aics)/sum(exp(-0.5*delta.aics))
+cbind(model=c("mA", "mB","mC","mD", "mE"),wi)
 
 # Question 11: Does the result in Question 10 above depend on which other models
 # are in the set?
