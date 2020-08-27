@@ -130,3 +130,19 @@ cbind(model=c("mA", "mB", "mC", "mD","mE"), delta.aics)
 m1 <- lm(age ~ prop.black, data = lions)
 m2 <- lm(age ~ prop.black + sex + park, data = lions)
 m3 <- lm(age ~ prop.black + sex*park, data = lions)
+
+
+# Question 13: In model 3 there are 4 categories (2 sex times 2 parks, the interaction between park
+#and sex means that the effect of sex depends on park), and one continuous explanatory variable.
+#This will result in four estimated regression lines, one for each of the 4 categories. Find the following estimates:
+
+# i. Slope of line for males in Serengeti.
+
+
+# ii. Slope of line for females in Ngorongoro.
+
+
+# iii. Intercept for males in Serengeti.
+
+
+# iv. Intercept for females in Serengeti.
