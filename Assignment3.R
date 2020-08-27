@@ -93,7 +93,8 @@ modelD <- lm(prop.black ~ age + sex + age*sex, data = lions)
 # the interaction term)? How many parameters were estimated for this model?
 
 
-# h) Consider a model set consisting of the following four models (three of which 
+# h) 
+# Consider a model set consisting of the following four models (three of which 
 # you have already fitted), each time with proportion black as the response variable:
 
 mA <- lm(prop.black ~ sex, data=lions)
@@ -114,4 +115,16 @@ cbind(model=c("mA", "mB", "mC", "mD","mE"), delta.aics)
 
 # Question 12: What is wrong with using linear regression to model proportion of 
 # nose blackness?
+
+
+# i) 
+# Actually, we wanted to be able to predict age from proportion blackness of the nose. Fitting a
+# linear regression model with age as the response variable is probably not quite the right thing to do,
+# because for these lions we knew the age exactly and measured the proportion black on their nose.
+# Usually in linear regression models we assume that the values of the explanatory variables are known
+# exactly, and all the uncertainty is in the response. But let’s just ignore this for the moment, and fit the following models.
+# model 1: A i = B i + e i
+# model 2: A i = B i + S i + P i + e i
+# model 3: A i = B i + S i ∗ P i + e i
+# where A i , B i , S i , P i are the age, proportion black, sex and park for lion i, respectively, and e i ∼ N (0, σ 2 ).
 
