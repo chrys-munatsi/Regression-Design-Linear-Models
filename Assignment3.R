@@ -137,12 +137,12 @@ m3 <- lm(age ~ prop.black + sex*park, data = lions)
 #This will result in four estimated regression lines, one for each of the 4 categories. Find the following estimates:
 
 # i. Slope of line for males in Serengeti.
-
+-2.8434
 
 # ii. Slope of line for females in Ngorongoro.
 
 
 # iii. Intercept for males in Serengeti.
-
+0.7528
 
 # iv. Intercept for females in Serengeti.
