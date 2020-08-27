@@ -146,3 +146,10 @@ m3 <- lm(age ~ prop.black + sex*park, data = lions)
 0.7528
 
 # iv. Intercept for females in Serengeti.
+
+
+# Question 14: Give a 95% prediction interval for the age of a lion with a completely black nose
+# (proportion = 1), using model 1.
+
+
+# Question 15: In your own words, interpret the above interval estimate.
