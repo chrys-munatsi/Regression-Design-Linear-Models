@@ -127,4 +127,6 @@ cbind(model=c("mA", "mB", "mC", "mD","mE"), delta.aics)
 # model 2: A i = B i + S i + P i + e i
 # model 3: A i = B i + S i ∗ P i + e i
 # where A i , B i , S i , P i are the age, proportion black, sex and park for lion i, respectively, and e i ∼ N (0, σ 2 ).
-
+m1 <- lm(age ~ prop.black, data = lions)
+m2 <- lm(age ~ prop.black + sex + park, data = lions)
+m3 <- lm(age ~ prop.black + sex*park, data = lions)
