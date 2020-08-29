@@ -139,16 +139,18 @@ m3 <- lm(age ~ prop.black + sex*park, data = lions)
 #This will result in four estimated regression lines, one for each of the 4 categories. Find the following estimates:
 
 # i. Slope of line for males in Serengeti.
--2.8434
+9.48
 
 # ii. Slope of line for females in Ngorongoro.
-
+9.48
 
 # iii. Intercept for males in Serengeti.
-0.7528
+# > 0.7538 + 2.2319 + 0.3630 -2.8434 
+[1] 0.5053
 
 # iv. Intercept for females in Serengeti.
-
+# > 0.7538 + 0.3630
+[1] 1.1168
 
 # Question 14: Give a 95% prediction interval for the age of a lion with a completely black nose
 # (proportion = 1), using model 1.
