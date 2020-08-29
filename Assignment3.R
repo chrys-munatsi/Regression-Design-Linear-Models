@@ -43,6 +43,13 @@ t.test(prop.black ~ sex, var.equal = F)
 
 # Question 3: In words, give a brief interpretation of the above confidence interval.
 
+# The single data point in these data was a female or male lion. This above confidence interval 
+# then means that we are 95% confidence that for the difference in average proportion black 
+# between males and females (with the given covariate values) is estimated to vary 
+# between -0.09 and 0.32 for a randomly chosen lion.
+
+
+
 # Question 4: Considering the t-test and the plots above, do these results mean 
 # that, everything else being equal, female lions have on average blacker noses
 # than male lions?
@@ -61,7 +68,7 @@ summary(modelA)
 # between the X variables and the Y variable; in other words, the Y values you 
 # predict from your multiple regression equation are no closer to the actual Y 
 # values than you would expect by chance.
-
+#  B. average proportion black in male noses = 0
 
 # e) 
 # Plot proportion black against age, using different colours for the different sexes.
@@ -91,7 +98,7 @@ modelD <- lm(prop.black ~ age + sex + age*sex, data = lions)
 
 # Question 9: What is the value of the maximised log likelihood for Model D (with
 # the interaction term)? How many parameters were estimated for this model?
-
+-111.1 and 3
 
 # h) 
 # Consider a model set consisting of the following four models (three of which 
@@ -117,6 +124,11 @@ cbind(model=c("mA", "mB","mC","mD", "mE"),wi)
 
 # Question 12: What is wrong with using linear regression to model proportion of 
 # nose blackness?
+
+# Usually in linear regression models we assume that the values of the explanatory 
+# variables are known exactly, and all the uncertainty is in the response 
+# (proportion of nose blackness). However, in this case the uncertainty is 
+# spread across the age or sex or park.
 
 
 # i) 
@@ -154,6 +166,9 @@ m3 <- lm(age ~ prop.black + sex*park, data = lions)
 
 # Question 14: Give a 95% prediction interval for the age of a lion with a completely black nose
 # (proportion = 1), using model 1.
-
+9.1 and 12.5
 
 # Question 15: In your own words, interpret the above interval estimate.
+# The single data point in these data was a female or male lion. This above interval estimate then means 
+# that we are 95% confidence that the age of a lion with a completely black nose
+# (proportion = 1 with the given covariate values) is estimated to vary between 9.1 and 12.5 years of age.
