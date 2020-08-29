@@ -112,7 +112,7 @@ wi <- exp(-0.5*delta.aics)/sum(exp(-0.5*delta.aics))
 cbind(model=c("mA", "mB","mC","mD", "mE"),wi)
 
 # Question 11: Does the result in Question 10 above depend on which other models
-# are in the set?
+# are in the set? Yes or NO
   
 
 # Question 12: What is wrong with using linear regression to model proportion of 
