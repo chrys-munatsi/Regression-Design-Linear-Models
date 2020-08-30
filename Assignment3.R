@@ -46,7 +46,7 @@ t.test(prop.black ~ sex)
 # The single data point in these data was a female or male lion. This above confidence interval 
 # then means that we are 95% confidence that for the difference in average proportion black 
 # between males and females (with the given covariate values) is estimated to vary 
-# between -0.09 and 0.32 for a randomly chosen lion.
+# between 0.11 and 0.30.
 
 
 
@@ -172,4 +172,4 @@ pred.int =  predict(m1,newdata = data.frame(prop.black = 1),interval="prediction
 # Question 15: In your own words, interpret the above interval estimate.
 # The single data point in these data was a female or male lion. This above interval estimate then means 
 # that we are 95% confidence that the age of a lion with a completely black nose
-# (proportion = 1 with the given covariate values) is estimated to vary between 9.1 and 12.5 years of age.
+# (proportion = 1 with the given covariate values) is estimated to vary between 7.5 and 14.0 years of age.
