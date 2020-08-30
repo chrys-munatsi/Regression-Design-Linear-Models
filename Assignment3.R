@@ -38,7 +38,7 @@ t.test(prop.black ~ sex)
 # Question 2: Give an estimate (with 95% confidence limits) for the difference in 
 # average proportion black between males and females. This value should be negative 
 # if males have blacker noses, positive if females have blacker noses
-t.test(prop.black ~ sex, var.equal = F)
+t.test(prop.black ~ sex)
 0.5262500 - 0.3203125 
 
 # Question 3: In words, give a brief interpretation of the above confidence interval.
