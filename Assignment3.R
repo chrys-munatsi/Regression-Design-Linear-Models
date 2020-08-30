@@ -30,7 +30,7 @@ plot(prop.black, age)
 
 # c) 
 # Use a t-test to compare proportion black between males and females.
-t.test(prop.black ~ sex, var.equal = TRUE)
+t.test(prop.black ~ sex)
 
 # Question 1: What is the baseline or reference category of the sex variable? 
 # Use the exact same name as used in the original data. ANSWER IS female
