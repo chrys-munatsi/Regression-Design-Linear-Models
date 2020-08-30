@@ -166,7 +166,8 @@ m3 <- lm(age ~ prop.black + sex*park, data = lions)
 
 # Question 14: Give a 95% prediction interval for the age of a lion with a completely black nose
 # (proportion = 1), using model 1.
-9.1 and 12.5
+pred.int =  predict(m1,newdata = data.frame(prop.black = 1),interval="prediction", conf.level=0.95)
+7.5 and 14.0
 
 # Question 15: In your own words, interpret the above interval estimate.
 # The single data point in these data was a female or male lion. This above interval estimate then means 
