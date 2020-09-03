@@ -11,8 +11,23 @@ species also appears to have a weak negative linear relationship between leaf ma
 
 
 
+# Coefficients:
+Estimate Std. Error t value Pr(>|t|)
+(Intercept) 1.158e-02 1.070e-02 1.083 0.2807
+SpeciesPunctata -9.583e-04 2.342e-03 -0.409 0.6830
+SpeciesVenusta -2.724e-03 2.321e-03 -1.174 0.2424
+Elevation 9.950e-06 5.425e-06 1.834 0.0687 .
+
+m2 : yi = ß0 + ß1x1i  + ß2x2i  + ß3x3 + ei
+
+where yi is the average leaf mass area, x3 is the measured elevation (in meters) and the xi's are dummy variables indicating 
+each of the species Punctata and species Venusta categories and in both cases ei  ~ N(0,σ2)
 
 
+
+
+Examine the first two models (m1 and m2). How has the estimated effect of Elevation
+changed from m1 to m2? Why do you think it has changed?
 
 
 
