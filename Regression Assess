@@ -24,12 +24,45 @@ each of the species Punctata and species Venusta categories and in both cases ei
 
 
 
-Examine the first two models (m1 and m2). How has the estimated effect of Elevation
+# 3 Examine the first two models (m1 and m2). How has the estimated effect of Elevation
 changed from m1 to m2? Why do you think it has changed?
 The effect of elevation in model 1 is stronger, and has become statistically significant compared to the effect from model 2.
 Model 2 adjusts for species whereas species is ignored in model 1. Species does not have a linear relationship with elevation.
 i.e there's a very weak correlation between elevation and species. Ignoring species therefore masks some of the effect of
-elevation on leaf mass area
+elevation on leaf mass area.
+
+
+
+# 4
+Interpret all regression coefficients (incl. the intercept) from model m2 and comment
+on their statistical significance.
+# Coefficients:
+Estimate Std. Error t value Pr(>|t|)
+(Intercept) 1.158e-02 1.070e-02 1.083 0.2807
+SpeciesPunctata -9.583e-04 2.342e-03 -0.409 0.6830
+SpeciesVenusta -2.724e-03 2.321e-03 -1.174 0.2424
+Elevation 9.950e-06 5.425e-06 1.834 0.0687 .
+
+
+The mean reponse for the baseline level, here the species Hybrid, beta0 = 1.158e-02, is estimated by the intercept. The intercept
+estimates the average leaf mass area rate of change for the species Hybrid at zero elevation. There is some evidence against the null
+hypothesis with p=0.2807. It is statistically significant.
+
+The coefficient estimate for the categorial variable SpeciesPuncata, beta SpeciesPunctata = -9.583e-04
+estmates the difference between baseline category and the species Puncata. This shows that leaf mass area is -9.583e-04 less than the 
+species Hybrid at zero elevation. There is little to no evidence for a relationshop between species Punctata and leaf mass area  
+(p=0.6830). It is not statistically significant.
+
+The coefficient estimate for the categorial variable SpeciesVenusta, beta SpeciesVenusta = -2.724e-03.
+estmates the difference between baseline category and the species Venusta. This shows that leaf mass area is -2.724e-03 less than the 
+species Hybrid at zero elevation. There is some evidence for a relationshop between species Punctata and leaf mass area  
+(p=0.6830). It is statistically significant.
+
+The coefficient estimate for the Elevation variable is positive, telling us that the leaf mass area increases by 9.950e-06 grams
+per cm2 per m increase in elevation. There is little to no evidence for a relationshop between species Punctata and leaf mass area  
+(p=0.687). It is not statistically significant.
+
+
 
 
 
