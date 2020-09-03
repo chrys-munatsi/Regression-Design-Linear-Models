@@ -1,3 +1,20 @@
 # 1. Figure 1 shows two scatterplots and two boxplots from the data exploration. What
 can you learn from these plots?
 
+From the Leaf fresh water content boxplot we see that the Venusta species has the most fresh water content, while there is not a big 
+difference between the Punctata and the Hybrid species. From the elevation boxplot we see that the Hybrid species has the biggest elevation 
+followed by the Venusta species and lastly the Punctata species. Regardless of leaf mass area, there does not appear to be much of a difference between 
+the Venusta species and Punctata species throughout the years between the year 1750 to the year 2000. However, the Hybrid Species first appears only once between 
+the years 1850-1900 and then two more times between the year 1950 and 2000. There appears to be a negative linear relationship between leaf
+mass area and fresh water content for the Venusta species, on the other hand, there is no linear relationship for the Hybriid species. The Punctata
+species also appears to have a weak negative linear relationship between leaf mass area and fresh water content.
+
+
+
+
+
+
+
+
+
+
