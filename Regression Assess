@@ -63,7 +63,12 @@ per cm2 per m increase in elevation. There is little to no evidence for a relati
 (p=0.687). It is not statistically significant.
 
 
-
+# 5. what is meant by “RSS” and explain how these numbers relate to the hypothesis test
+being conducted.
+It is the residual sum of squares and it examines the change in the amount of variance explained. For one extra parameter 
+(degree of freedom) the residual sum of squares decreases by 0.00015637, comparing that to the MSE gives an F-statistic of 
+10.825. The small p-value (p=0.001261) indicates that this change is unlikely under the null hypothesis (extra parameters
+are all 0), and therefore there is evidence that the extra parameter improves the model.
 
 
 
