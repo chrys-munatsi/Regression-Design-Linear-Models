@@ -44,23 +44,21 @@ SpeciesVenusta -2.724e-03 2.321e-03 -1.174 0.2424
 Elevation 9.950e-06 5.425e-06 1.834 0.0687 .
 
 
-The mean reponse for the baseline level, here the species Hybrid, beta0 = 1.158e-02, is estimated by the intercept. The intercept
-estimates the average leaf mass area rate of change for the species Hybrid at zero elevation. There is some evidence against the null
-hypothesis with p=0.2807. It is statistically significant.
-
-The coefficient estimate for the categorial variable SpeciesPuncata, beta SpeciesPunctata = -9.583e-04
-estmates the difference between baseline category and the species Puncata. This shows that leaf mass area for SpeciesPunctata is -9.583e-04 less than the 
-species Hybrid at zero elevation. There is little to no evidence for a relationshop between species Punctata and leaf mass area  
-(p=0.6830). It is not statistically significant.
-
-The coefficient estimate for the categorial variable SpeciesVenusta, beta SpeciesVenusta = -2.724e-03.
-estmates the difference between baseline category and the species Venusta. This shows that leaf mass area for SpeciesVenusta is -2.724e-03 less than the 
-species Hybrid at zero elevation. There is some evidence for a relationshop between species Punctata and leaf mass area  
-(p=0.6830). It is statistically significant.
-
-The coefficient estimate for the Elevation variable is positive, telling us that the leaf mass area increases by 9.950e-06 grams
-per cm2 per m increase in elevation. There is little to no evidence for a relationshop between species Punctata and leaf mass area  
-(p=0.687). It is not statistically significant.
+The mean response for the baseline level, here the species Hybrid, ß0 = 1.158e-02, is estimated by the intercept. 
+The intercept estimates the average leaf mass area rate of change for the species Hybrid at zero elevation. There is 
+some evidence against the null hypothesis (p=0.2807). It is statistically significant. The coefficient estimate 
+for the categorical variable SpeciesPuncata, ßSpeciesPunctata = -9.583e-04 estmates the difference between baseline 
+category and the species Puncata. This shows that leaf mass area for SpeciesPunctata is 9.583e-04 grams per cm2    
+less than the species Hybrid at zero elevation. There is little to no evidence for a relationship between species 
+Punctata and leaf mass area (p=0.6830). It is not statistically significant. The coefficient estimate for the 
+categorical variable SpeciesVenusta, ßSpeciesVenusta = -2.724e-03. estimates the difference between baseline 
+category and the species Venusta. This shows that leaf mass area for SpeciesVenusta is 2.724e-03 grams per  
+cm2  less than the species Hybrid at zero elevation. There is some evidence for a relationship between species 
+Punctata and leaf mass area (p=0.2424). It is statistically significant. The coefficient estimate for the 
+Elevation variable is positive, telling us that the leaf mass area increases by 9.950e-06 grams per cm2 per
+m increase in elevation. There is little to no evidence for a relationship between species Punctata and leaf
+mass area (p=0.687). It is not statistically significant. In general, for all the regression coefficients 
+the statistical significance is not that strong.
 
 
 
