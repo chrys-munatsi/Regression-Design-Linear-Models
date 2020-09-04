@@ -95,7 +95,8 @@ HA : The difference between the mean of the baseline category relative to Specie
 to your conclusion from the test above. (3)
 -1.960e-03 +/- 2 * 6.881e-04
 [-0.0033362, -0.0005838]
-The confidence intervatal does contain the value for the alternative hypothesis ( -0.00196) and it remains negative
+The method we use to construct the interval ensures that 95% of the time the interval will cover the true mean.
+The intervak does not include 0 and so this is in sync with findinf the effect to be significant.
 
 10. interpret the effect of “SpeciesVenusta”.
 This shows that leaf mass area for SpeciesVenusta is -1.960e-03 less than the species Hybrid at zero elevation. There is some evidence 
@@ -104,5 +105,46 @@ for a relationshop between species Punctata and leaf mass area (p=0.00505). It i
 
 
 
+
+Using model m5:
+Coefficients:
+Estimate Std. Error t value Pr(>|t|)
+(Intercept) 0.042090 0.003187 13.207 < 2e-16 ***
+SpeciesVenusta 0.013154 0.004304 3.056 0.00268 **
+FWC -0.011498 0.002776 -4.142 5.85e-05 ***
+SpeciesVenusta:FWC -0.006993 0.003377 -2.071 0.04015 *
+
+11. calculate the effect of FWC on LMA for both Punctata and Venusta species.
+
+
+
+
+12. predict the average LMA for a Venusta plant with a FWC of 1.5 units. (2)
+0.042090 + 0.013154 -0.011498 * 1.5 -0.006993
+Answer = 0.031004
+
+
+
+13. give an overall summary of how, according to this model, FWC affects LMA. (4)
+The coefficient estimate for the FWC variable is negative, telling us that LMA decreases by -0.011498 grams
+per cm2 per unit increase in FWC. There is strong evidence against the null hypothesis (p=5.85e-05). The negative
+FWC effect suggests that species with a higher LMA are decreasing faster compared to species with a lower LMA. THe changes
+are small, but small changes accumulate over the years 
+
+
+
+Figure 2 shows the diagnostic plots from the model with only elevation in it (model m1):
+
+
+14. is there anything in these plots that would make you worried about the model assumptions? Explain your answer. (3)
+
+
+
+
+15. compare the points labelled 136 and 142 in the bottom right panel of Figure 2, and discuss in terms of leverage and influence.
+Leverage refers to the extremeness of the ezplanatory variables  corresponding to an observation. Influential refers to observations
+that have a large effect on the regression coefficients estimates whether they are included or not. The residual for obseravtion 
+142 does not have high leverage and will not affect the fitted line too much. The observation at 136 does have high leverage but it is not
+influential and does not exceed Cook's distance.
 
 
