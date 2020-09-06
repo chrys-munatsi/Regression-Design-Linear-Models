@@ -2,7 +2,7 @@ setwd("~/r_practice/assignment-three")
 
 # a) 
 # Read the lion data into R
-
+hhh 
 lions <- read.table("lions2.txt")
 attach(lions)
 
