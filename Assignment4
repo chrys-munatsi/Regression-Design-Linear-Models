@@ -1,0 +1,31 @@
+The research question is to test three new varieties of fish food on the fishes 
+and measure if there is any improvement in their growth compared to the previously
+used fish food. The experiment will be conducted over a period of six months. 
+800 small fish are randomly selected using the same fishing gear. Placing the 
+fish into the tanks will require sub-sampling. The larger specimens are removed
+from the catch and are all measured and their weight averaged and recorded. 
+The remainder of the catch is stirred with shovels to give a homogeneous
+mixture of sizes. If the heap of remaining fishes looks homogeneous, the 
+heap is divided into equal parts so that we have 20 fish placed in each of
+the 40 equally-sized tanks. The experimental unit is the fish tank. Using the
+available space in the laboratory, the fish tank design system is on a plastic 
+shelf system lined with trays that hold the overflowing type fish tanks, the water 
+movement is powered by submersible water pumps, it also has a fluidized bed sand
+filter and an industry-standard particle filter. The temperature and humidity are
+controlled and the fish have natural light Air exchange occurs in the reservoir 
+and the trays, to maintain oxygen supply. Evaporation of the water supply will be
+replenished by pouring a bucket of water from the dam into the reservoir (which
+flows around the shelf system) once or twice a week. It is essential that the water
+remain flowing to each tank or the fish will suffocate before the experiment is over,
+so, this will be checked every day. In addition, the fish tanks are cleaned by snails.
+The first ten tanks are the control treatment and are labelled by the name of the
+previously used fish food and the remaining thirty tanks are labelled by the names 
+of the new varieties of fish food. Using a random number generator in R, ranging
+from the numbers 1- 4, the fish are randomly placed in each of the tanks.The
+response is the increase in the weight of the fish which will be measured by their
+body-length (length of the fish from its anterior extremity to the end of its tail
+fin). The same weight of fish food is placed in each tank four times a day using 
+the same apparatus at the same particular time of day each day. The growth of 
+the fishes is checked at the same interval, eg once every 24 hours. The observational 
+unit is the unit where the fish are sampled from each of the treatment tanks and 
+are weighed. Their weight is recorded and comparisons are made with the control treament
