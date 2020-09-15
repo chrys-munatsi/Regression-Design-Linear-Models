@@ -35,5 +35,40 @@ stripchart(mass ~ food, data = frog, add=TRUE, vertical=TRUE, method = "jitter",
 30
 
 
+# Question 4
+# Are any of these extreme values likely to be influential outliers?
+sort(tapply(frog$mass, frog$food, sd))
+# No 
+
+
+# Question 5 
+# Check the assumption of equal population variances by calculating the standard 
+# deviation of the observations by treatment.
+sort(tapply(frog$mass, frog$food, sd))
+# (a.) 
+# What is the ratio of the largest to the smallest standard deviation? 
+0.07224957 / 0.03130495 = 2.307928
+# (b.) 
+# Is the assumption of equal variance reasonable? (Yes or No)
+# Yes 
+
+
+# Question 6
+m1 <- aov(mass~food, data = frog)
+summary(m1)
+# (a.) 
+# What is the estimated Mean Square for Error, to three decimal places? 
+0.00264  = 0.003
+# (b.)
+# What is the F value for the treatment effect, to two decimal places?  
+29.85
+# (c.) 
+# What is the numerator degrees of freedom for this F test?  
+1
+# (d.) 
+# What is the denominator degrees of freedom for this F test?  
+18
+
+
 
 
