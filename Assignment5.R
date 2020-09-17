@@ -71,4 +71,21 @@ summary(m1)
 
 
 
+library(multcompView)
+treatment <- factor(sort(rep(c(10,30,60,90),5)))
+values = c(0.29,0.24,0.22,0.24,0.19,0.25,0.23,0.20,0.23,0.17,0.34,0.24,0.33,0.29,0.3,0.41,0.49,0.37,0.38,0.29)
+
+data=data.frame(treatment,values)
+
+# What is the effect of the treatment on the value ?
+model=lm(data$values ~ data$treatment)
+ANOVA=aov(model)
+summary(ANOVA)
+
+# Tukey test to study each pair of treatment :
+TUKEY <- TukeyHSD(x=ANOVA, 'data$treatment', conf.level=0.95)
+TUKEY
+
+
+
 
