@@ -14,6 +14,7 @@ stripchart(mass ~ food, data = frog, add=TRUE, vertical=TRUE, method = "jitter",
 # Question 2 
 # Is this a balanced design
 # True
+# Younneed to correct and make sure it works
 
 
 # Question 3
