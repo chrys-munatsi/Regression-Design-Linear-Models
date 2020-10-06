@@ -26,6 +26,13 @@ geckos$fire
 
 # Question 3
 # List the treatments
+fenced megaherbivore‐exclusion plots (‘exclosures’)
+‘unfenced’ control plots
+# This means
+# Present 
+# Excluded 
+# Burned 
+# Unburned
 
 # Question 4
 # Is the design balanced
@@ -33,11 +40,29 @@ geckos$fire
 
 # Question 5
 # How many replicates per treatment
+# Three 
 
 # Question 6
 # Looking at boxplots is there a strong fire-elepahnts effect? Explain why
+
 boxplot(dens2013 ~ fire + elephants, data = geckos, xlab = "fire treatment", ylab = "density", las = 1, cex.lab = 1.5, cex.axis = 1.5)
 stripchart(dens2013 ~ fire + elephants, data = geckos, add=T,vertical=TRUE, method="jitter", jitter=.1)
+# From the above we see that 
+# no outliers, errors are independent and normally distributed 
+#checking for additive
+attach(geckos)
+plot(geckos$elephants[elephants == "Present"], geckos$elephants[elephants == "Excluded"], 
+     xlab = "elephants", ylab = "Density 2013")
+axis(1)
+axis(2, las = 1)
+points(geckos$fire[fire == "Burned"], geckos$fire[fire == "Unburned"], pch=19)
+legend(1, 2.5, legend = c("elephants", "fire"), pch = c(21, 19), bty = "n" )
+
+plot(dat$treat, dat$diff1m)
+for(block in unique(dat$pair)){
+  temp <- dat[dat$pair == block,]
+
+
 
 geckos$fire <- factor(geckos$fire)
 geckos$elephants <- factor(geckos$elephants)
@@ -105,8 +130,6 @@ for(block in unique(geckos$babbler)){
 
 # examine standard deviation of observations per treatment
 sort(tapply(geckos$dens2013, geckos$elephants, sd))
-
-
 
 
 
