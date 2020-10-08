@@ -111,6 +111,19 @@ sort(tapply(geckos$dens2013, geckos$elephants, sd))
 # What is the total number of experimental units?
 # 3 sites and 4 treatments per site so = 12
 
+### Question 9
+# Starting with the third question we asked in the instructions ("Does the effect
+# of fire depend on whether the trees were browsed by elephants?"), which 
+# term do you test to answer this question? What is the null hypothesis for this test?
+# What do the results mean, in relation to our question?
+The term tested is Fire. The null hypothesis for this test is that the effect of 
+fire is independent of whether trees were browsed by elephants or not.
+The results show that the density of elephant damaged trees in plots with 
+elephants present) was greater in burned patches than in unburned patches. 
+The F value (72.97)  with the p-value (0·013 ) show that there is some 
+evidence against the null hypothesis.
+
+
 library(emmeans)
 m1 <- lm(dens2013 ~ elephants * fire, data = geckos)
 summary(m1)
