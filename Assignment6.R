@@ -1,4 +1,4 @@
-### ASSIGNMENT SIX
+### ASSIGNMENT SIX NEARLY THERE
 
 setwd("~/r_practice/assignment-six")
 
