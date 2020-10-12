@@ -134,6 +134,13 @@ evidence against the null hypothesis.
 There is evidence that, on average (across the fire levels), elephants affect
 the density of geckos (p = 0.011).
 
+# This is testing the effect of species on duration. The H0 is that all treatments 
+# have the same mean. The F value is large and the p-value small so we have
+# evidence against H0. That means that at least two treatments cause a different mean response.
+
+
+
+
 ### Question 12
 What is the estimated gecko density for the treatment with elephants and burning 
 in block 'Central'? 
