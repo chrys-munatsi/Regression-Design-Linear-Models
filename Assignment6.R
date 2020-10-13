@@ -85,17 +85,9 @@ interaction.plot(elephants, fire, dens2013,
 # deviation of the observations by treatment.
 
 # What is the ratio of the largest to the smallest standard deviation?
-sort(tapply(geckos$dens2013, geckos$fire, sd))
-#  Unburned    Burned 
-80.65897 238.05805 
-# 238.05805 / 80.65897
-#  2.951414
-sort(tapply(geckos$dens2013, geckos$elephants, sd))
-# Excluded   Present 
-84.88678 279.21670
-# 279.21670 / 84.88678
-# 3.289284
-
+sd <- aggregate(geckos$dens2013 ~ geckos$elephants + geckos$fire, FUN = sd)
+sd
+97.38639 / 76.77484
 
 
 ### Question 8
