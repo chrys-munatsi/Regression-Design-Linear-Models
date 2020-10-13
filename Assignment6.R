@@ -45,7 +45,7 @@ fenced megaherbivore‐exclusion plots (‘exclosures’)
 # Yes. In the treatment combination where the plot was burned and elephants were 
 # present (Burned.Present) boxplot had the highest density of lizards per 
 # hectare in July 2013. From the interaction plot, there is the main effect 
-# of fire and a small effect of elephants, so there is a strong fire-elephant
+# of fire and the main of elephants, so there is a strong fire-elephant
 # interaction effect.
 
 boxplot(dens2013 ~ fire + elephants, data = geckos, xlab = "fire treatment", ylab = "density", las = 1, cex.lab = 1.5, cex.axis = 1.5)
