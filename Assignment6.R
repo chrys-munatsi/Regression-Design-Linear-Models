@@ -218,15 +218,5 @@ for(block in unique(geckos$fire)){
 
 
 
-boxplot(dens2013 ~ fire + elephants, data = geckos, xlab = "fire treatment", ylab = "density", las = 1, cex.lab = 1.5, cex.axis = 1.5)
-i<-1 # a running variable to help make colour coded lines
-for(block in unique(geckos$elephants)){
-  temp <- geckos[geckos$elephants == block,]
-  temp <- temp[sort(as.numeric(temp$fire),index.return=TRUE)$ix,]
-  lines(temp$elephants, temp$dens2013, col=i)
-  i<-i+1
-}
 
-# examine standard deviation of observations per treatment
-sort(tapply(geckos$dens2013, geckos$elephants, sd))
 
