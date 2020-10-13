@@ -30,11 +30,7 @@ geckos$fire
 # List the treatments
 fenced megaherbivore‐exclusion plots (‘exclosures’)
 ‘unfenced’ control plots
-# This means
-# Present 
-# Excluded 
-# Burned 
-# Unburned
+# Burned.Excluded, Unburned.Excluded, Burned.Present, Unburned.Present
 
 # Question 4
 # Is the design balanced
