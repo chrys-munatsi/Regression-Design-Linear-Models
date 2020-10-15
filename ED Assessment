@@ -33,21 +33,25 @@ a different mean response.
 5. Code Chunk 2 also has lines that start with Design. What do these two lines test,
 what is the result and what conclusion do you draw?
 
-The two lines how much Design G and Design S differ from the reference level (Design F) 
-The intercept is the estimate of the first treatment (Design F) and the other two lines
-Design G and Design S are the difference between the first and each other treatment.
-One can conclude that there is very strong evidence against the null hypothesis for 
-Design F (p<0.001). However, for Design G and S there is some evidence that they differ
+The line tests the null hypothesis that the true parameter value is equal to zero.
+The two lines test how much Design G and Design S differ from the reference level (Design F) 
+One can conclude that for Design G and S there is some evidence that they differ
 from the reference level (Design F). Folded jets from Design G and S travelled a lesser distance than Design F.
 
 
 6. In Code Chunk 2, what does the line starting with (Intercept) test? What are the
 H0 and H1 tested in this line? What is the result of the test and what conclusion
 do you draw? Is this a sensible test?
+ 
+Ho: the mean of the reference treatment (Design F) is zero
+This tests whether the mean of the reference treatment (Design F) is zero, that is, whether 
+this treatment had no distance! This is not a sensible test because, if there was no distance travelled
+in this treatment, this would have been obvious to the researchers. One can conclude that there is very strong 
+evidence against the null hypothesis for  Design F (p<0.001).
 
-The intercept is the estimate of the distance travelled by the first treatment (Design F).
-One can conclude that there is very strong evidence against the null hypothesis for 
-Design F (p<0.001). No, it is not sensible.
+
+
+
 
 7. What – if any – connection is there between the mean squares for Residuals given
 in Code Chunk 1 and the residual standard error given in Code Chunk 2? What do
