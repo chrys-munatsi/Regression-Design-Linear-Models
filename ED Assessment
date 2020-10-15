@@ -5,8 +5,8 @@
 blocking was effective or not, in this case?
 
 # The purpose of blocking is to reduce experimental error variance. The blocks are best set up when 
-each design is given to a volunteer at least once. And that randomization occurs between the designs and the volunteers
-.The blocking was effective because F > 1 so, it did reduce unexplained error variance.
+there is correct randomization of the treatments within blocks so that each volunteer would have been equally
+likely to get either design.The blocking was effective because F > 1 so, it did reduce unexplained error variance.
 
 3. The design was balanced. How many replicates were there per treatment? Show
 your calculations.
@@ -22,11 +22,12 @@ What are the H0 and H1 tested in this line? What is the result of the test and w
 conclusions do you draw about the research question this experiment was designed
 to answer?
 
-H0: There is no difference between the treatments
-H1: The difference between treatment means is not equal to zero
-There is strong evidence that at least two of the treatment means differed from 
-eachother (F= 11.650, p < 0.001). One can conclude that the means of at least
-two of the designs differed from eachother.
+This line is testing the effect of design on distance.
+The H0 is that all treatments have the same mean. H1: All treatments do not have
+the same mean.The F value is large and the p-value small so we have evidence 
+against H0 (F= 11.650, p < 0.001). That means that at least two treatments cause
+a different mean response. 
+
 
 
 5. Code Chunk 2 also has lines that start with Design. What do these two lines test,
