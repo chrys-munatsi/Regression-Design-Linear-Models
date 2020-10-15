@@ -57,10 +57,12 @@ evidence against the null hypothesis for  Design F (p<0.001).
 in Code Chunk 1 and the residual standard error given in Code Chunk 2? What do
 these numbers represent?
 
-The mean squares for the residuals gove an unbiased estimate for sigma^2 and can be 
-obtained from the ANOVA table. The mean square value for residuals = 2.653. 
-The residual standard error is our best estimate of sigma for the dataset =  1.629. 
-The residual standard error is our best estimate of average within-treatment standard deviation.
+The relationship between them is that the residual standard error is the positive
+square root of the mean square error. In the example, the residual standard error
+would be equal to sqrt(2.653) , or approximately 1.629. The mean squares for the
+residuals gove an unbiased estimate for sigma^2 and can be  obtained from the
+ANOVA table. The mean square value for residuals = 2.653. The residual standard
+error is our best estimate of average within-treatment standard deviation =  1.629.
 
 8. In Code Chunk 1, the line starting with Design:Person shows the results of an F
 test. What effect is this line testing? What are the H0 and H1 for this test? What
