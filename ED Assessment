@@ -12,7 +12,7 @@ likely to get either design.The blocking was effective because F > 1 so, it did 
 your calculations.
 
 N = r * a where 
-N = number of experimental units and there are 63 experimental units
+N = number of experimental units and from 62 degrees of freedom there are 63 experimental units
 r = replicates 
 a = treatments and there are 3 treatments 
 Thus the number of replicates are N / a, 63 / 3 = 21 
