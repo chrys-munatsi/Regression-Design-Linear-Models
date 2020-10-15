@@ -155,3 +155,13 @@ Thus replication can be done.
 variance into main effects and interaction effects. For your particular design, list
 these effects. For which of these effects does your design have the highest power
 and for which one does it have lowest power? Explain.
+
+The main effects of the factor soil: soil has two levels.
+The main effects of the factor water: water has three levels.
+The interaction effect is Soil:Water
+
+The design has the lowest power for soil. We would need to increase the number of replicates 
+for the factor soil, or we need to be satisfied with detecting only larger differences
+to be able to have a higher power. We would need fewer replicates for water to detect 
+the same difference between water levels (low, medium, high), because we already have 
+some hidden replication in the levels of soil. Thus the main effect of water has the highest power.
