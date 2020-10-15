@@ -97,22 +97,23 @@ to all the terms.
 12. In Code Chunk 3, you can see that Tukey’s procedure calculates a 95% confidence
 interval. If we had asked for a 99% confidence interval instead, how would the
 interval have changed? Explain your answer.
-The confidence interval would be wider because of greater uncertainty.
 
+To get higher confidence, we need to make the interval wider interval.  This is 
+evident in the multiplier, which increases with confidence level.
 
 
 13. Interpret the confidence interval for the G-S comparison
 0.6330529 to 3.075519 and a p value of 0.0018208. The confidence interval is small 
 and does not overlap zero. The p value is small and indicates strong evidence agaisnt H0.
-And it means that we are 95% confident that the difference between the distance travelled
-by Design G and Design S is between 0.6330529 to 3.075519 meters.
+And it means that the difference between the distance travelled
+by Design G and Design S is between 0.6330529 to 3.075519 meters 95% of the time.
 
 
 14. For a moment, you are thinking it would be more fun to visit sites within the
 current extent of this species in South Africa and record whether soil type and
 moisture is associated with occurrence of this species. What main advantages does
 an experiment have over such an observational survey?
-Only by experimentation can we infer causality. In additon, experiments make it
+Only by experimentation can we infer causality. In addition, experiments make it
 easy to analyse without multicollinearity. Lastly, experiments sace time and money
 to optimize settings.
 
