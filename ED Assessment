@@ -1,0 +1,10 @@
+1. What is this type of design called?
+# Completely randomized block design
+
+2. What is the purpose of blocking? How are blocks best set up? Explain whether
+blocking was effective or not, in this case?
+
+# The purpose of blocking is to reduce experimental error variance. The blocks are best set up when 
+each design is given to a volunteer at least once. And that randomization occurs between the designs and the volunteers
+.The blocking was effective because F > 1 so, it did reduce unexplained error variance.
+
