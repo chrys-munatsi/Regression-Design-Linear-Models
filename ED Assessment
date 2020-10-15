@@ -139,7 +139,16 @@ Response = Seedling survival
 the three fundamental principles of experimental design. What would you use as
 experimental unit? (4)
 
-The experimental unit would be 
+Three Fundamental Principles of Experimental Design: Replic cate, Randomise and Reduce Unexplained Variation (Block- ing)
+The plants are randomly assigned to a pot in the greenhouse 
+The experimental unit is the pot that contains a plant. We may measure each plant, 
+in which case the observational units are the plants. The blocking factor is location.
+The experimental units at one location can be expected to have different characteristics
+(more shady) than those at another location (more sunny). Randomization occurs
+within each block. Each of the six treatments must be applied to several experimental 
+units. This ensures that the variation between two or more units receiving the same 
+treatment can be estimated and valid comparisons can be made between the treatments.
+Thus replication can be done. 
 
 
 18. You are planning to analyse the resulting data by ANOVA, which partitions the
