@@ -8,3 +8,100 @@ blocking was effective or not, in this case?
 each design is given to a volunteer at least once. And that randomization occurs between the designs and the volunteers
 .The blocking was effective because F > 1 so, it did reduce unexplained error variance.
 
+3. The design was balanced. How many replicates were there per treatment? Show
+your calculations.
+
+N = r * a where 
+N = number of experimental units and there are 63 experimental units
+r = replicates 
+a = treatments and there are 3 treatments 
+Thus the number of replicates are N / a, 63 / 3 = 21 
+
+4. In Code Chunk 1, the line starting with Design shows the results of an F test.
+What are the H0 and H1 tested in this line? What is the result of the test and what
+conclusions do you draw about the research question this experiment was designed
+to answer?
+
+H0: There is no difference between the treatments
+H1: The difference between treatment means is not equal to zero
+There is strong evidence that at least two of the treatment means differed from 
+eachother (F= 11.650, p < 0.001). One can conclude that the means of at least
+two of the designs differed from eachother.
+
+
+5. Code Chunk 2 also has lines that start with Design. What do these two lines test,
+what is the result and what conclusion do you draw?
+
+The two lines how much Design G and Design S differ from the reference level (Design F) 
+The intercept is the estimate of the first treatment (Design F) and the other two lines
+Design G and Design S are the difference between the first and each other treatment.
+One can conclude that there is very strong evidence against the null hypothesis for 
+Design F (p<0.001). However, for Design G and S there is some evidence that they differ
+from the reference level (Design F). Folded jets from Design G and S travelled a lesser distance than Design F.
+
+
+6. In Code Chunk 2, what does the line starting with (Intercept) test? What are the
+H0 and H1 tested in this line? What is the result of the test and what conclusion
+do you draw? Is this a sensible test?
+
+The intercept is the estimate of the distance travelled by the first treatment (Design F).
+One can conclude that there is very strong evidence against the null hypothesis for 
+Design F (p<0.001). No, it is not sensible.
+
+7. What – if any – connection is there between the mean squares for Residuals given
+in Code Chunk 1 and the residual standard error given in Code Chunk 2? What do
+these numbers represent?
+
+The mean squares for the residuals gove an unbiased estimate for sigma^2 and can be 
+obtained from the ANOVA table. The mean square value for residuals = 2.653. 
+The residual standard error is our best estimate of sigma for the dataset =  1.629. 
+The residual standard error is our best estimate of average within-treatment standard deviation.
+
+8. In Code Chunk 1, the line starting with Design:Person shows the results of an F
+test. What effect is this line testing? What are the H0 and H1 for this test? What
+is the result of the test and what conclusions do you draw from this test?
+
+This is testing for an interaction between the design and the person. 
+The H0 is that the effect of the person on distance does not depend on the level of design. 
+The F value is small (= 1)  and the p-value small is so we have some evidence against H 0. 
+That means that there is some evidence that effect of the person on distance does depend on the level of design. 
+
+9. How far did the G jets thrown by Russel fly, on average? Round to two decimal
+places. 
+ 2.58000 +  6.00000 = 8.58m on average 
+ 
+10. Code Chunk 3 shows the results of applying Tukey’s procedure to this analysis.
+Explain what Tukey’s procedure does. Quantitatively describe what the results
+shown in Code Chunk 3 tell us about the research question this experiment was
+designed to answer.
+
+Tukey’s procedure calculates all pairwise contrasts between the factor levels. It accounts
+for multiple testing by adjusting the confidence intervals so that the experiment-wise
+error probability is at the desired level. The output above shows the results of the 3 contrasts involv-
+ing all pair-wise comparisons. We get an estimate of the difference
+( diff ), the lower and upper confidence limits ( lwr and upr ), and
+the p-value, adjusted for multiple testing ( p adj ). For example, 
+have a look at the first contrast, between Design G and Design S treatments.
+
+
+11. In the call to the function TukeyHSD, what does the argument ‘which’ do and what
+does it default to?
+It lists the terms in the fitted model for which the intervals should be calculated. It defaults
+to all the terms.
+
+12. In Code Chunk 3, you can see that Tukey’s procedure calculates a 95% confidence
+interval. If we had asked for a 99% confidence interval instead, how would the
+interval have changed? Explain your answer.
+The confidence interval would be wider because of greater uncertainty.
+
+
+
+13. Interpret the confidence interval for the G-S comparison
+0.6330529 to 3.075519 and a p value of 0.0018208. The confidence interval is small 
+and does not overlap zero. The p value is small and indicates strong evidence agaisnt H0.
+And it means that we are 95% confident that the difference between the distance travelled
+by Design G and Design S is between 0.6330529 to 3.075519 meters.
+
+
+
+
