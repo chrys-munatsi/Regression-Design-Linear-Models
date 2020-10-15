@@ -1,5 +1,5 @@
 1. What is this type of design called?
-# Completely randomized block design
+# randomized block design
 
 2. What is the purpose of blocking? How are blocks best set up? Explain whether
 blocking was effective or not, in this case?
@@ -107,6 +107,9 @@ by Design G and Design S is between 0.6330529 to 3.075519 meters.
 current extent of this species in South Africa and record whether soil type and
 moisture is associated with occurrence of this species. What main advantages does
 an experiment have over such an observational survey?
+Only by experimentation can we infer causality. In additon, experiments make it
+easy to analyse without multicollinearity. Lastly, experiments sace time and money
+to optimize settings.
 
 
 15. Back to the experiment: what design does your experiment need so that it can
@@ -124,6 +127,7 @@ Response = Seedling survival
 the three fundamental principles of experimental design. What would you use as
 experimental unit? (4)
 
+The experimental unit would be 
 
 
 18. You are planning to analyse the resulting data by ANOVA, which partitions the
