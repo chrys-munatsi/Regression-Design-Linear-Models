@@ -87,11 +87,10 @@ designed to answer.
 Tukey’s procedure calculates all pairwise contrasts between the factor levels. It accounts
 for multiple testing by adjusting the confidence intervals so that the experiment-wise
 error probability is at the desired level. The output above shows the results of the 3 contrasts involv-
-ing all pair-wise comparisons. We get an estimate of the difference
-( diff ), the lower and upper confidence limits ( lwr and upr ), and
-the p-value, adjusted for multiple testing ( p adj ). For example, 
-have a look at the first contrast, between Design G and Design S treatments.
-Relative effect of design on distance travelled.
+ing all pair-wise comparisons (the relative effect of design on distance travelled. We get an 
+estimate of the difference( diff ), the lower and upper confidence limits ( lwr and upr ), and
+the p-value, adjusted for multiple testing ( p adj ). In our example G-S and F-S, the adjusted 
+p value is small (p < 0.001) so there is strong evidence that there was a difference between the contrasts.
 
 11. In the call to the function TukeyHSD, what does the argument ‘which’ do and what
 does it default to?
