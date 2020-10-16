@@ -89,7 +89,7 @@ ing all pair-wise comparisons. We get an estimate of the difference
 ( diff ), the lower and upper confidence limits ( lwr and upr ), and
 the p-value, adjusted for multiple testing ( p adj ). For example, 
 have a look at the first contrast, between Design G and Design S treatments.
-
+Relative effect of design on distance travelled.
 
 11. In the call to the function TukeyHSD, what does the argument ‘which’ do and what
 does it default to?
