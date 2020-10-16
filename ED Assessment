@@ -34,9 +34,11 @@ a different mean response.
 what is the result and what conclusion do you draw?
 
 The line tests the null hypothesis that the true parameter value is equal to zero.
-The two lines test how much Design G and Design S differ from the reference level (Design F) 
-One can conclude that for Design G and S there is some evidence that they differ
-from the reference level (Design F). Folded jets from Design G and S travelled a lesser distance than Design F.
+The two lines test how much Design G and Design S differ from the reference level (Design F).
+Design G and S traveled a lesser distance than Design F (-0.92 meters less and -1.56 meters 
+less than Design F, respectively). One can conclude that for Design G and S there 
+is some evidence that they differ from the reference level (Design F). This is 
+because of the p values : 0.4929 and 0.2464 show some evidence against the null hypothesis.
 
 
 6. In Code Chunk 2, what does the line starting with (Intercept) test? What are the
