@@ -206,15 +206,7 @@ for(block in unique(geckos$elephants)){
   i<-i+1
 }
 
-### For this one the line's don't cross
-plot(geckos$elephants, geckos$dens2013, las=1, ylab="Density 2013")
-i<-1 # a running variable to help make colour coded lines
-for(block in unique(geckos$fire)){
-  temp <- geckos[geckos$fire == block,]
-  temp <- temp[sort(as.numeric(temp$elephants),index.return=TRUE)$ix,]
-  lines(temp$fire, temp$dens2013, col=i)
-  i<-i+1
-}
+
 
 
 
