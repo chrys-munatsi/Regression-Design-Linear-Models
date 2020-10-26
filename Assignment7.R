@@ -43,3 +43,10 @@ It can only be used for nested models and is valid asymptotically  ie large ηi
 and large N ( number of observations) 
 
 # Question 9:
+# Fully specify the model that has been fitted in model A.
+
+# Question 10: 
+# Look at output from model A.
+# Give residual degrees of freedom, 
+# number of parameters estimated
+(excluding intercept), total number of observations.
