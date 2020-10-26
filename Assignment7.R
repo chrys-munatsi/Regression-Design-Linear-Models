@@ -39,3 +39,7 @@ Yes
 
 # Question 8:
 # When are likelihood ratio tests in logistic regression appropriate?
+It can only be used for nested models and is valid asymptotically  ie large ηi 
+and large N ( number of observations) 
+
+# Question 9:
