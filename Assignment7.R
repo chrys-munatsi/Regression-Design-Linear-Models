@@ -67,15 +67,36 @@ https://stackoverflow.com/questions/47695924/multinom-how-to-get-the-number-of-o
 
 # Question 12: 
 # In words, what is the null hypothesis tested in the intercept line in the output from model A?
+That the log-odds for success for the intercept is equal to 0
 
 # Question 13: 
 # In the output from model A, there is evidence for an interaction between size and age. Is 
 # the #reason and interpretation for this interaction the relationship between age and size,
 # immature eagles being smaller than adults?
-
+Yes
 
 # Question 14: 
 # Interpret the coefficient on the PS line in the output from model B on both the log-odds and
 # the odds scale.
 
+# Question 15: 
+# State the null hypothesis (in words) that is being tested on the PS line in the output from
+# model B.
+
+# Question 16: How many parameters are estimated in model C? What is its AIC value? 
+# What is the maximised log-likelihood of this model?
+
+
+# Question 17: Look at the outputs from models A and B. What would you reply to a 
+# claim that age of pirate eagle has no measurable effect on the probability of success? Justify your answer.
+
+
+# Question 18: Which of the three models (A, B, C) has most support from the data?
+
+# Question 19: Using the output from model A, estimate the probability of success for a large adult pirating
+# eagle attacking a large victim.
+
+# Question 20:
+# Roughly summarize the results from model A. You don’t need to give estimates or p-values.
+# Just roughly explain how each factor affects the probability of success.
 
