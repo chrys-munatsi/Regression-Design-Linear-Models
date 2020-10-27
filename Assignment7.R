@@ -54,6 +54,8 @@ mC <- glm(cbind(y, n-y)  A + P + A*P, family = binomial)
 
 
 # Look at output from model A.
-# Give residual degrees of freedom, 
-# number of parameters estimated
-(excluding intercept), total number of observations.
+# Give residual degrees of freedom, = 3
+# number of parameters estimated (excluding intercept), 
+# total number of observations. = 4
+
+
