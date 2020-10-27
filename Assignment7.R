@@ -55,7 +55,27 @@ mC <- glm(cbind(y, n-y)  A + P + A*P, family = binomial)
 
 # Look at output from model A.
 # Give residual degrees of freedom, = 3
-# number of parameters estimated (excluding intercept), 
-# total number of observations. = 4
+# number of parameters estimated (excluding intercept), = 4
+# total number of observations. 
+ length(residuals(mA)) = 8 
+https://stackoverflow.com/questions/47695924/multinom-how-to-get-the-number-of-observations
+
+# Question 11: 
+# In the output from model A, which group is represented by the intercept?
+
+
+
+# Question 12: 
+# In words, what is the null hypothesis tested in the intercept line in the output from model A?
+
+# Question 13: 
+# In the output from model A, there is evidence for an interaction between size and age. Is 
+# the #reason and interpretation for this interaction the relationship between age and size,
+# immature eagles being smaller than adults?
+
+
+# Question 14: 
+# Interpret the coefficient on the PS line in the output from model B on both the log-odds and
+# the odds scale.
 
 
