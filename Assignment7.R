@@ -85,6 +85,8 @@ Yes
 
 # Question 16: How many parameters are estimated in model C? What is its AIC value? 
 # What is the maximised log-likelihood of this model?
+4 parameter
+AIC: 74.478
 
 
 # Question 17: Look at the outputs from models A and B. What would you reply to a 
@@ -92,6 +94,7 @@ Yes
 
 
 # Question 18: Which of the three models (A, B, C) has most support from the data?
+Model A 
 
 # Question 19: Using the output from model A, estimate the probability of success for a large adult pirating
 # eagle attacking a large victim.
