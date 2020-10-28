@@ -9,7 +9,8 @@ eagles <- eagles
 
 # Question 2
 # Find the average success rate for immature (pirating) eagles.
-
+((17/27)+(1)+(0/28)+(1/4))/4
+[1] 0.4699074
 
 
 # Question 3
@@ -89,13 +90,15 @@ Yes
 # What is the maximised log-likelihood of this model?
 4 parameter
 AIC: 74.478
+logLik(mC) = -33.23876 (df=4)
 
 
 # Question 17: Look at the outputs from models A and B. What would you reply to a 
 # claim that age of pirate eagle has no measurable effect on the probability of success? Justify your answer.
-I would agree with the claim because large eagles, regardless of age, were usually 
-successful in pirating from feeding eagles. The small difference 
-in AIC values between models A and B shows this. 
+I would agree with the claim because large eagles, regardless of age, were usually successful 
+in pirating from feeding eagles. The p values for age in both models A and B were 
+not statistically significant.
+
 
 # Question 18: Which of the three models (A, B, C) has most support from the data?
 Model A 
