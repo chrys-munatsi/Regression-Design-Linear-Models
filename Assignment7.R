@@ -93,7 +93,9 @@ AIC: 74.478
 
 # Question 17: Look at the outputs from models A and B. What would you reply to a 
 # claim that age of pirate eagle has no measurable effect on the probability of success? Justify your answer.
-
+I would agree with the claim because large eagles, regardless of age, were usually 
+successful in pirating from feeding eagles. The small difference 
+in AIC values between models A and B shows this. 
 
 # Question 18: Which of the three models (A, B, C) has most support from the data?
 Model A 
