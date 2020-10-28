@@ -81,6 +81,10 @@ Yes
 # Question 14: 
 # Interpret the coefficient on the PS line in the output from model B on both the log-odds and
 # the odds scale.
+On average, log(p/1-p) decreases by 3.5 units if the reference category increases by 1 unit.
+A unit increase in PS is associated with the odds of the reference category 
+(p/1-p) changing by a factor of exp(-3.4605)  = 0.03 being multiplied by 0.03 
+ie a reduction of 97%
 
 # Question 15: 
 # State the null hypothesis (in words) that is being tested on the PS line in the output from
