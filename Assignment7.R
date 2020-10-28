@@ -28,7 +28,9 @@ Small Immature
 # Question 5: 
 # Attach a copy of your figure with the four boxplots (success rate per pirate 
 # eagle category).
-boxplot(y/n ~ A + P)
+boxplot(y/n ~ A + P, xlab = "Eagle category", ylab = "Success rate", las = 1, cex.lab = 1.5, cex.axis = 1.5)
+stripchart(y/n ~ A + P, add=T,vertical=TRUE, method="jitter", jitter=.1)
+
 
 # Question 6:
 # Based on the single explanatory variable models, which single variable is 
