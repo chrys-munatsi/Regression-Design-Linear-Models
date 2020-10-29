@@ -65,7 +65,7 @@ https://stackoverflow.com/questions/47695924/multinom-how-to-get-the-number-of-o
 
 # Question 11: 
 # In the output from model A, which group is represented by the intercept?
-
+Adult pirating eagle
 
 
 # Question 12: 
@@ -113,4 +113,7 @@ Model A
 # Question 20:
 # Roughly summarize the results from model A. You don’t need to give estimates or p-values.
 # Just roughly explain how each factor affects the probability of success.
-
+Large eagles, regardless of age, were usually successful in pirating from feeding eagles.
+Body size of the attacking eagle was more important than age in explaining the success 
+of pirating the attacking bird. Small pirating eagles were generally unsuccessful 
+unless they were adults attempting to steal from other small eagles. 
