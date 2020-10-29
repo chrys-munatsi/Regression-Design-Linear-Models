@@ -49,11 +49,17 @@ and large N ( number of observations)
 
 # Question 9:
 # Fully specify the model that has been fitted in model A.
+Yi ~ Bin(1, pi)
+
+logit(pi) = β0 + β1 Ai +  β2Pi  + β3AiPi  + β4Vi
+
+where Yi is success (1) or failure (0) of pirating eagles, all ni = 1, and pi denotes the probability of success in pixel i
+
 
 # Question 10: 
-mA <- glm(cbind(y, n-y)  A + P + A*P + V, family = binomial)
-mB <- glm(cbind(y, n-y)  A + P + V, family = binomial)
-mC <- glm(cbind(y, n-y)  A + P + A*P, family = binomial)
+mA <- glm(cbind(y, n-y) ~ A + P + A*P + V, family = binomial)
+mB <- glm(cbind(y, n-y) ~ A + P + V, family = binomial)
+mC <- glm(cbind(y, n-y) ~ A + P + A*P, family = binomial)
 
 
 # Look at output from model A.
@@ -89,6 +95,7 @@ ie a reduction of 97%
 # Question 15: 
 # State the null hypothesis (in words) that is being tested on the PS line in the output from
 # model B.
+That there is no difference in the log-odds for success between PS and the reference category
 
 # Question 16: How many parameters are estimated in model C? What is its AIC value? 
 # What is the maximised log-likelihood of this model?
@@ -109,6 +116,7 @@ Model A
 
 # Question 19: Using the output from model A, estimate the probability of success for a large adult pirating
 # eagle attacking a large victim.
+0.71
 
 # Question 20:
 # Roughly summarize the results from model A. You don’t need to give estimates or p-values.
