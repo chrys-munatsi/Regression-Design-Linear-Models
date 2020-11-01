@@ -125,4 +125,4 @@ Model A
 Large eagles, regardless of age, were usually successful in pirating from feeding eagles.
 Body size of the attacking eagle was more important than age in explaining the success 
 of pirating the attacking bird. Small pirating eagles were generally unsuccessful 
-unless they were adults attempting to steal from other small eagles. 
+unless they were adults attempting to steal from other small eagle..
