@@ -112,7 +112,8 @@ A and B show that there is little to no measurable effect of the age of pirate e
 The p values for age in both models A and B were not statistically significant.
 
 
-# Question 18: Which of the three models (A, B, C) has most support from the data?
+# Question 18: 
+# Which of the three models (A, B, C) has most support from the data?
 Model A 
 
 # Question 19: Using the output from model A, estimate the probability of success for a large adult pirating
