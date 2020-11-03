@@ -48,8 +48,9 @@ points(log(Ptero1[1]) ~ depth[1], col = "blue", pch = 20)
 # Question 5: 
 # Comment on the relationship between the count and depth. Do you think a 
 # quadratic term for depth might be required in the model? Give a reason for your answer
-
-
+# There exists a linear relationship between count and depth. A quadratic term
+# would not be required in the model. There is little non-linearity in the data and the polynomial
+# does not better fit the data 
 
 # Question 6: 
 # Find the median number of fish counted in each of the three habitats.
