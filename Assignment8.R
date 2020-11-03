@@ -44,20 +44,23 @@ plot(log(Ptero1) ~ depth, col = as.numeric(habitat1), ylab = "log(Number of Pang
 points(log(Ptero1[1]) ~ depth[1], col = "blue", pch = 20)
 
 
-
 # Question 5: 
 # Comment on the relationship between the count and depth. Do you think a 
 # quadratic term for depth might be required in the model? Give a reason for your answer
+plot((Ptero1)**2 ~ depth, col = as.numeric(habitat1), ylab = "Number of Panga fish",
+     xlab = "Depth (m)", pch = as.numeric(habitat1), ylim = c(0,30))
+points((Ptero1[1])**2 ~ depth[1], col = "blue", pch = 20)
 # There exists a linear relationship between count and depth. A quadratic term
 # would not be required in the model. There is little non-linearity in the data and the polynomial
 # does not better fit the data 
 
+
+
 # Question 6: 
 # Find the median number of fish counted in each of the three habitats.
-habitat1  <- as.factor(habitat)
-levels(habitat1)
-utapply(Ptero, habitat1, median)
-
+with(fish, tapply(as.numeric(fish$X.4), as.factor(fish$X.11), FUN = median, na.rm= T ))
+Kelp    Reef    Sand 
+      1       6       3 
 # Question 7: 
 # Fit the null model, i.e. a model with only the intercept.
 # Interpret the intercept coefficient estimate.
