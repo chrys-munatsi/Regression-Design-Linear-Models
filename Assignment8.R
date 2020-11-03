@@ -45,12 +45,6 @@ points(log(Ptero1[1]) ~ depth[1], col = "blue", pch = 20)
 
 
 
-
-##The one that put letters instead of numbers
-plot(Ptero ~ depth, col = "orange", ylab = "Number of fish",
-       xlab = "Depth (m)", pch = habitat)
-points(Ptero[1] ~ depth[1], col = "red", pch = 20)
-
 # Question 5: 
 # Comment on the relationship between the count and depth. Do you think a 
 # quadratic term for depth might be required in the model? Give a reason for your answer
